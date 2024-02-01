@@ -1,0 +1,36 @@
+/* #region COMMON */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+}
+
+a {
+  text-decoration: none;
+}
+
+/* #endregion COMMON */
+
+/* #region UTILITIES */
+
+.container {
+  margin: auto;
+}
+
+/* #endregion UTILITIES */
+
+/* #region HEADER */
+/* #endregion HEADER */
+
+/* #region MAIN */
+/* #endregion MAIN */
+
+/* #region FOOTER */
+/* #endregion FOOTER */
+
+/* #region MEDIA QUERIES */
+/* #endregion MEDIA QUERIES */
