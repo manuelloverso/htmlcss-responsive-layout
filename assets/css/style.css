@@ -22,11 +22,6 @@ img {
 ul li {
   list-style: none;
 }
-
-section {
-  margin-bottom: 50px;
-}
-
 :root {
   --bg-white: #fff;
   --bg-navbar: #0084fd;
@@ -57,8 +52,8 @@ section {
 
 [class^="col-"] {
   padding: 1rem;
-  border: 1px dashed;
-  background-color: aqua;
+  /* border: 1px dashed;
+  background-color: aqua; */
 }
 
 .col-1 {
@@ -172,6 +167,10 @@ nav {
 /* #region MAIN */
 
 /* #region DEMO SECTION */
+#demo-download {
+  padding: 50px 0 100px 0;
+}
+
 #demo-download .card {
   background-color: var(--demo-cards);
   padding: 2rem;
@@ -221,6 +220,10 @@ nav {
 /* #endregion DEMO SECTION */
 
 /* #region PLANNING SECTION */
+#planning {
+  padding: 100px 0 50px 0;
+}
+
 .strategic-planning div img {
   width: 100%;
 }
@@ -251,6 +254,9 @@ nav {
 /* #endregion PLANNING SECTION */
 
 /*  #region PARTNERS SECTION */
+#partners {
+  padding: 50px 0;
+}
 
 .testimonial-top {
   text-align: center;
@@ -303,10 +309,14 @@ nav {
 /*  #endregion PARTNERS SECTION */
 
 /* #region BENEFITS */
+#benefits {
+  padding: 70px 0 50px 0;
+}
 
 #benefits h1 {
   color: white;
   text-align: center;
+  font-size: 2.5rem;
 }
 
 .benefits-card {
@@ -342,6 +352,9 @@ nav {
 /* #endregion BENEFITS */
 
 /* #region ABOUT US SECTION */
+#about-us {
+  padding: 50px 0 100px 0;
+}
 
 .left h1 {
   color: var(--bg-violet);
@@ -363,7 +376,7 @@ nav {
   color: var(--bg-violet);
   top: 0;
   right: 0;
-  font-size: 3.5rem;
+  font-size: 300%;
 }
 
 .quote img {
@@ -382,11 +395,75 @@ nav {
   border-radius: 20px;
 }
 
-/* #region ABOUT US SECTION */
+/* #endregion ABOUT US SECTION */
+
+/* #region GET STARTED SECTION */
+#get-started {
+  padding: 50px 0;
+}
+
+.get-started-container {
+  text-align: center;
+  color: white;
+  margin: auto;
+  width: 80%;
+  max-width: 550px;
+}
+
+#get-started h2 {
+  font-size: 1.6rem;
+}
+
+#get-started h1 {
+  color: var(--itsfree-text);
+  font-size: 3.5rem;
+}
+
+#get-started h1 + p {
+  line-height: 2rem;
+}
+
+#get-started .btn {
+  color: var(--bg-violet);
+  background-color: white;
+  padding: 1rem 3.4rem;
+  border-radius: 30px;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+}
+
+#get-started .copyright {
+  font-size: 0.8rem;
+}
+
+/* #endregion GET STARTED SECTION */
 
 /* #endregion MAIN */
 
 /* #region FOOTER */
+
+footer {
+  background-color: var(--bg-footer);
+  padding: 50px 0;
+}
+
+.footer-container {
+  width: 90%;
+  margin: auto;
+  max-width: 500px;
+  text-align: center;
+  color: white;
+}
+
+footer p {
+  font-size: 0.8rem;
+}
+
+footer a {
+  color: var(--bg-violet);
+  text-decoration: underline;
+}
+
 /* #endregion FOOTER */
 
 /* #region MEDIA QUERIES */
