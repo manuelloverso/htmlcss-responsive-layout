@@ -17,6 +17,10 @@ ul li {
   list-style: none;
 }
 
+section {
+  margin-bottom: 50px;
+}
+
 /* #endregion COMMON */
 
 /* #region UTILITIES */
