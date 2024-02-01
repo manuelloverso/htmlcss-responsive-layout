@@ -276,7 +276,7 @@ nav {
 
 .testimonial-img {
   width: 80%;
-  max-width: 260px;
+  max-width: 230px;
   margin: 15px auto;
   aspect-ratio: 1;
   background-position: center;
@@ -300,7 +300,46 @@ nav {
   font-weight: 600;
 }
 
-/*  #region PARTNERS SECTION */
+/*  #endregion PARTNERS SECTION */
+
+/* #region BENEFITS */
+
+#benefits h1 {
+  color: white;
+  text-align: center;
+}
+
+.benefits-card {
+  background-color: white;
+  border-radius: 20px;
+  padding: 2rem;
+}
+
+.benefits-card h2 {
+  color: var(--bg-violet);
+  font-size: 3rem;
+}
+
+.benefits-card h3 {
+  color: var(--bg-violet);
+}
+
+.benefits-card p {
+  line-height: 1.8rem;
+  font-size: 0.9rem;
+  color: var(--text-demo);
+}
+
+.benefits-card .btn {
+  padding: 0.6rem 2.8rem;
+  background-color: var(--bg-violet);
+  border-radius: 30px;
+  letter-spacing: 0.4rem;
+  color: white;
+  font-weight: 600;
+}
+
+/* #endregion BENEFITS */
 
 /* #endregion MAIN */
 
@@ -341,6 +380,13 @@ nav {
 
   .col-sm-12 {
     width: 100%;
+  }
+
+  .testimonial-card {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    text-align: start;
   }
 }
 
@@ -396,6 +442,10 @@ nav {
 
   #planning .strategic-planning > div:first-child {
     margin-bottom: 100px;
+  }
+
+  .testimonial-card {
+    gap: 80px;
   }
 }
 
