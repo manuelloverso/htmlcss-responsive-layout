@@ -7,10 +7,12 @@
 }
 
 body {
+  font-family: "Open Sans", sans-serif;
 }
 
 a {
   text-decoration: none;
+  display: inline-block;
 }
 
 ul li {
@@ -21,13 +23,23 @@ section {
   margin-bottom: 50px;
 }
 
+:root {
+  --bg-white: #fff;
+  --bg-navbar: #0084fd;
+  --demo-cards: #b5ddff;
+  --bg-violet: #9792e4;
+  --itsfree-text: #fdc15f;
+  --bg-footer: #333333;
+  --text-demo: #656565;
+}
+
 /* #endregion COMMON */
 
 /* #region UTILITIES */
 
 .container {
   margin: auto;
-  width: 90%;
+  width: 85%;
 }
 
 .row {
@@ -73,17 +85,57 @@ section {
   width: 100%;
 }
 
+/* MARGINS BOTTOM  */
+.mb-15 {
+  margin-bottom: 15px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.mb-30 {
+  margin-bottom: 30px;
+}
+
+.mb-50 {
+  margin-bottom: 50px;
+}
+
+.mb-80 {
+  margin-bottom: 80px;
+}
+
+.mb-100 {
+  margin-bottom: 100px;
+}
+
+.mb-120 {
+  margin-bottom: 120px;
+}
+
+.mb-150 {
+  margin-bottom: 150px;
+}
+
 /* #endregion UTILITIES */
 
 /* #region HEADER */
 
 header {
-  background-color: blue;
+  background-color: var(--bg-navbar);
 }
 
 nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.dropdown-menu > i {
+  color: #fff;
+  font-size: 1.6rem;
 }
 
 .nav-links {
@@ -93,6 +145,57 @@ nav {
 /* #endregion HEADER */
 
 /* #region MAIN */
+
+/* #region DEMO SECTION */
+.card {
+  background-color: var(--demo-cards);
+  padding: 2rem;
+  text-align: center;
+  border-radius: 20px;
+}
+
+#demo-download .col-12:first-child .card {
+  padding-bottom: 0;
+  text-align: start;
+}
+
+.card > i {
+  color: var(--bg-navbar);
+  font-size: 5rem;
+}
+
+.card > h3 {
+  color: var(--bg-navbar);
+  font-size: 1.3rem;
+}
+
+.card > p {
+  color: var(--text-demo);
+  font-weight: 700;
+  font-size: 0.9rem;
+  line-height: 2;
+}
+
+.card > .btn {
+  padding: 0.5rem 2.5rem;
+  background-color: var(--bg-navbar);
+  font-weight: 600;
+  letter-spacing: 0.2rem;
+  color: white;
+  border-radius: 20px;
+}
+
+.card > div {
+  width: 90%;
+  margin: auto;
+}
+
+.card div img {
+  display: block;
+  width: 100%;
+}
+/* #endregion DEMO SECTION */
+
 /* #endregion MAIN */
 
 /* #region FOOTER */
