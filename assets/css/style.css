@@ -178,7 +178,7 @@ nav {
   border-radius: 20px;
 }
 
-#demo-download .col-12:first-child .card {
+#demo-download .bigger-card .card {
   padding-bottom: 0;
   text-align: start;
 }
@@ -188,19 +188,19 @@ nav {
   font-size: 5rem;
 }
 
-#demo-download .card > h3 {
+#demo-download .card h3 {
   color: var(--bg-navbar);
   font-size: 1.3rem;
 }
 
-#demo-download .card > p {
+#demo-download .card p {
   color: var(--text-demo);
   font-weight: 700;
   font-size: 0.9rem;
   line-height: 2;
 }
 
-#demo-download .card > .btn {
+#demo-download .bigger-card .btn {
   padding: 0.5rem 2.5rem;
   background-color: var(--bg-navbar);
   font-weight: 600;
@@ -209,12 +209,14 @@ nav {
   border-radius: 20px;
 }
 
-#demo-download .card > div {
+#demo-download .card > .demo-img {
   width: 90%;
+  max-width: 280px;
   margin: auto;
+  align-self: flex-end;
 }
 
-#demo-download .card div img {
+#demo-download .bigger-card .demo-img img {
   width: 100%;
 }
 /* #endregion DEMO SECTION */
@@ -508,6 +510,14 @@ footer a {
     gap: 30px;
     text-align: start;
   }
+
+  #demo-download .bigger-card .demo-img {
+    margin: 0;
+  }
+
+  #demo-download .card {
+    height: 100%;
+  }
 }
 
 /* DESPTOP RESPONSIVE */
@@ -566,6 +576,20 @@ footer a {
 
   .testimonial-card {
     gap: 80px;
+  }
+
+  #demo-download .bigger-card .card {
+    display: flex;
+    gap: 20px;
+
+    & .demo-left {
+      width: 50%;
+    }
+  }
+
+  #planning .container {
+    width: 60%;
+    max-width: 950px;
   }
 }
 
